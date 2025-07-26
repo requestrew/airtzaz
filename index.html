@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit an Appeal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 60%;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #004aad;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 30px;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #0094ff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Submit an Appeal</h1>
+    <p>If you believe we made a mistake in removing your content or restricting your account, you can submit an appeal for review.</p>
+
+    <h2>📋 Community Guidelines Overview</h2>
+    <p>We remove content that violates our <a href="#">Community Standards</a>. Common violations include:</p>
+    <ul>
+      <li>Hate speech or symbols</li>
+      <li>Bullying and harassment</li>
+      <li>Nudity or sexual activity</li>
+      <li>Violent or graphic content</li>
+      <li>Intellectual property violations</li>
+      <li>Spam or misinformation</li>
+    </ul>
+
+    <h2>📝 Appeal Process</h2>
+    <ul>
+      <li>Our team will review your content within 7 business days</li>
+      <li>We’ll send a notification to your account email</li>
+      <li>If approved, your content will be restored</li>
+      <li>For repeated violations, additional restrictions may apply</li>
+    </ul>
+
+    <h2>📨 Appeal Form</h2>
+    <form action="request.html" method="POST">
+      <label for="reason">Reason for Appeal:</label>
+      <textarea id="reason" name="reason" rows="5" required></textarea>
+
+      <button type="submit">Submit Appeal Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
